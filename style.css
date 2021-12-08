@@ -2,7 +2,7 @@
 .question2 div h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
-  background-image: url("../../media/star.svg");
+  background-image: url("media/star.svg");
   background-repeat: no-repeat;
 }
 
@@ -26,7 +26,7 @@
 
 .question2 div ul::after {
   content: "";
-  background-image: url(../../media/code-img.png);
+  background-image: url("media/code-img.png");
   width: 300px;
   height: 150px;
   position: absolute;
