@@ -1,0 +1,71 @@
+@import "q2/question2";
+@import "q3/abstract/abtract";
+@import "q3/question3";
+
+
+
+//question 6
+#Lorem *:not(:first-child, p) h1,#Lorem *:not(:first-child, p) h2 {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+//question 7
+#mine  {
+    background-color: cyan;
+}
+
+#bingo {
+    width: 50vw;
+}
+////////////////////////////////////
+
+// making the page pretty (just a bit)
+
+////////////////////////////////////
+#switch {
+    width: 150px;
+    height: 40px;
+}
+.question {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.nav {
+    display: flex;
+    width: auto;
+    border: 3px solid #fccb90;
+    background-color: #ffb7b9;
+    border-radius: 0 50px 50px 0;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+    height: 5rem;
+    align-items: center;
+    box-shadow: 4px 8px 15px 3px rgba(0,0,0,0.74);
+    li {
+        a {
+            color: #d576ec;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            transition: 0.5s ease;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+body {
+    margin: 0;
+    padding: 0 ;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}

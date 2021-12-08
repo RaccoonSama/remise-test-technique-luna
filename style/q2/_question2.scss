@@ -1,0 +1,79 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+.question2 {
+
+
+    div {
+        h1 {
+            font-family: Arial, Helvetica, sans-serif; //pas exactement sur de la font exact
+            color: gray;
+
+            &::first-letter {
+                color: blue;
+                padding-left: 40px;
+            }
+
+            background-image: url("../../media/star.svg");
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 80px;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(243, 243, 243, 0.808);
+            width: 50%;
+            padding:30px;
+            position: relative;
+            &::after {
+                content: "";
+                background-image: url(../../media/code-img.png); //image de pietre qualité me je m'en excuse
+                width: 300px;
+                height: 150px;
+                position: absolute;
+                right: -220px;
+                top: -25px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        li {
+            @for $i from 1 through 4 {
+                &:nth-of-type(#{$i}) {
+                    &::before {
+                        content: "\2022";
+                        color: red;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                    }
+                    
+                }
+            } 
+            &:nth-of-type(4) {
+                color: green;
+            }
+            &:nth-of-type(2){
+                &::before {
+                    color: rgba(255, 0, 0, 0.397);
+                }
+            }
+            @for $e from 5 through 8 {
+                &:nth-of-type(#{$e}) {
+                    &::before {
+                        content: "-";
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+}

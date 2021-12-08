@@ -1,0 +1,209 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+.question2 div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  background-image: url("../../media/star.svg");
+  background-repeat: no-repeat;
+}
+
+.question2 div h1::first-letter {
+  color: blue;
+  padding-left: 40px;
+}
+
+.question2 div ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(243, 243, 243, 0.808);
+  width: 50%;
+  padding: 30px;
+  position: relative;
+}
+
+.question2 div ul::after {
+  content: "";
+  background-image: url(../../media/code-img.png);
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  right: -220px;
+  top: -25px;
+  background-repeat: no-repeat;
+}
+
+.question2 div li:nth-of-type(1)::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(2)::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(3)::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(4)::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(4) {
+  color: green;
+}
+
+.question2 div li:nth-of-type(2)::before {
+  color: rgba(255, 0, 0, 0.397);
+}
+
+.question2 div li:nth-of-type(5)::before {
+  content: "-";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(6)::before {
+  content: "-";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(7)::before {
+  content: "-";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.question2 div li:nth-of-type(8)::before {
+  content: "-";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+/* COLORS */
+/* SIZE */
+/* PADDING */
+/* WIDTH */
+.fooBar {
+  font-size: 16px;
+  padding: 32px;
+  border: red solid 1px;
+}
+
+.fooBar.big {
+  font-size: calc($basic-font-size * 2);
+  padding: calc( $basic-padding-size * 2);
+}
+
+.hello-world .col1 {
+  width: calc($base-width * 2);
+  background: #334455;
+  color: #666;
+}
+
+.hello-world .col2 {
+  Width: calc($base-width * 2);
+  color: #334455;
+  background: #666;
+}
+
+.hello-world .col1 {
+  z-index: 37;
+  position: static;
+}
+
+.lorem-ipsum {
+  padding: 0px 2em 0px 2em;
+}
+
+.lorem-dolor::before {
+  color: #999999;
+}
+
+@media (max-width: 64em) {
+  .hello-world .col1 {
+    width: calc($base-width * 3);
+    background-color: #999999;
+  }
+  .hello-world .col2 {
+    width: 25%;
+  }
+}
+
+#Lorem * h1:hover, #Lorem * h2:hover {
+  cursor: pointer;
+}
+
+#mine {
+  background-color: cyan;
+}
+
+#bingo {
+  width: 50vw;
+}
+
+#switch {
+  width: 150px;
+  height: 40px;
+}
+
+.question {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  width: auto;
+  border: 3px solid #fccb90;
+  background-color: #ffb7b9;
+  border-radius: 0 50px 50px 0;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+  height: 5rem;
+  align-items: center;
+  box-shadow: 4px 8px 15px 3px rgba(0, 0, 0, 0.74);
+}
+
+.nav li a {
+  color: #d576ec;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.nav li a:hover {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}

@@ -1,0 +1,48 @@
+
+
+.fooBar {
+    font-size: $basic-font-size;
+    padding: $basic-padding-size;
+    border: red solid 1px;
+}
+.fooBar.big {
+    font-size: calc($basic-font-size * 2);
+    padding: calc( $basic-padding-size * 2);
+}
+.hello-world {
+    .col1 {
+        width: calc($base-width * 2);
+        background: $color1;
+        color: $color2;
+    }
+    .col2 {
+        Width: calc($base-width * 2);
+        color: $color1;
+        background: $color2;
+    }
+    .col1 {
+        z-index: 37;
+        position: static;
+    }
+}
+.lorem-ipsum {
+    padding: 0px 2em 0px 2em;
+}
+.lorem-dolor {
+    &::before {
+        color: lighten($color2, 20%);
+    }
+}
+
+@include tablet {
+.hello-world {
+    .col1 {
+        $color2: #999999;
+        width: calc($base-width * 3);
+        background-color: $color2;
+    }
+    .col2 {
+        width: $base-width;
+    }
+}
+}
