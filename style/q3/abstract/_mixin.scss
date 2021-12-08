@@ -1,5 +1,5 @@
-@mixin tablet {
-    @media (max-width:64em) {
-        @content;
+@mixin tablet { //creation of mixin for tablet size
+    @media (max-width:64em) { // if the page width is 64em and less
+        @content;//content
     }
 }
